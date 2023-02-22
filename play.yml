@@ -1,0 +1,11 @@
+- hosts: debian-servers
+  become:
+    true
+  become_method:
+    sudo
+  become_user:
+    root
+  remote_user:
+    ansible
+  roles:
+   - nginx
